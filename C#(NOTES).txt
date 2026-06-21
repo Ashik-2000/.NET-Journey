@@ -1,0 +1,26 @@
+There are three categories of collections in C#
+
+1) Normal system collection (System.Collectionss) [DEPRICATED]
+	-> ArrayList {array, with different date type element}
+	-> HashTable
+	-> Queue
+	-> Stack
+
+2) Generic system collection [These are basically normal collections, just with generic types] (System.Collections.Generic)
+	-> List<T>
+	-> Dictionary<Tkey, Kvalue>
+	-> Queue<T>
+	-> stack<T>
+	->sortedList<Tkey, Tvalue>
+	
+3> Concurrent system collection [These collections are helpful when we are using multi-threading in C#].
+	-> ConcurrentDictionary<key, value>
+	-> ConcurrentQueue<T>
+	-> ConcurrentStack<T>
+	etc.
+	
+Boxing => This is the process of converting a value type variable into reference type variable.
+	Example:
+		int num = 100;
+		object obj = num; // boxing
+		int i = (int)obj; // unboxing
