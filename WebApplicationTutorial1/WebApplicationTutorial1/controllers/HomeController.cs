@@ -6,7 +6,7 @@ namespace WebApplicationTutorial1.controllers
     public class HomeController: Controller
     {
         [Route("getResponse")]
-        public IActionResult getResponse(Profile request)
+        public IActionResult GetResponse(Profile request)
         {
             if (!ModelState.IsValid)
             {
@@ -15,6 +15,12 @@ namespace WebApplicationTutorial1.controllers
                 return BadRequest(error);
             }
             return Ok(request.ToString());
+        }
+
+        [Route("home")]
+        public IActionResult HomePage()
+        {
+            return View();
         }
     }
 }
