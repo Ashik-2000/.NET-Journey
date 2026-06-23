@@ -1,5 +1,7 @@
-﻿@{
-    var title = "This is a demo app";
+﻿@using WebApplicationTutorial1.Models
+@{
+    var title = "This is title";
+    var profile = new Profile(){Name = "Ashik", Age=26, City = "Dhaka"};
 }
 <!DOCTYPE html>
 <html>
@@ -8,5 +10,15 @@
 </head>
 <body>
     <h1>Welcome to Home Page</h1>
-</body>
+    @if (profile.Weight.HasValue)
+        {            
+        <p>Hello, @profile.Name from @profile.City. We see, you're @profile.Age years old and your 
+        weight is @profile.Weight Kg.</p>
+        }
+        else
+        {
+        <p>Hello, @profile.Name from @profile.City. We see, you're @profile.Age years old and you
+        haven't provided your wight yet.</p>
+        }
+    </body>
 </html>
