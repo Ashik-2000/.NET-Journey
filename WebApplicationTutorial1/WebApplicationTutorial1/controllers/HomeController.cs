@@ -18,6 +18,7 @@ namespace WebApplicationTutorial1.controllers
         }
 
         [Route("home")]
+        [Route("/")]
         public IActionResult HomePage()
         {
             return View();
