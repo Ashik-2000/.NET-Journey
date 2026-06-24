@@ -1,7 +1,0 @@
-G:\C#(.NET)\FirstProject\FirstProject\bin\Debug\FirstProject.exe.config
-G:\C#(.NET)\FirstProject\FirstProject\bin\Debug\FirstProject.exe
-G:\C#(.NET)\FirstProject\FirstProject\bin\Debug\FirstProject.pdb
-G:\C#(.NET)\FirstProject\FirstProject\obj\Debug\FirstProject.csproj.AssemblyReference.cache
-G:\C#(.NET)\FirstProject\FirstProject\obj\Debug\FirstProject.csproj.CoreCompileInputs.cache
-G:\C#(.NET)\FirstProject\FirstProject\obj\Debug\FirstProject.exe
-G:\C#(.NET)\FirstProject\FirstProject\obj\Debug\FirstProject.pdb
