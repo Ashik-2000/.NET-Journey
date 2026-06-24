@@ -4,12 +4,10 @@ namespace WebApplicationTutorial1.Models
 {
     public class Profile
     {
-        [Required]
-        public string Name { get; init; } = String.Empty;
-        [Range(25, 60)]
-        public int Age { get; init; }
-        public string City { get; init; } = string.Empty;
-        public int Weight { get; init; }
+        public string? Name { get; init; } = string.Empty;
+        public int? Age { get; init; }
+        public string? City { get; init; } = string.Empty;
+        public int? Weight { get; init; }
 
         public override string ToString()
         {
