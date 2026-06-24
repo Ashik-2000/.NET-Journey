@@ -1,0 +1,129 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.registration-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.registration-card {
+    width: 100%;
+    max-width: 1100px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+    .form-header h1 {
+        font-size: 32px;
+        color: #1f2937;
+        margin-bottom: 8px;
+    }
+
+    .form-header p {
+        color: #6b7280;
+    }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-group label {
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #374151;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: all 0.2s ease;
+        background: #fff;
+    }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.button-section {
+    margin-top: 30px;
+    text-align: right;
+}
+
+    .button-section button {
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .button-section button:hover {
+            transform: translateY(-1px);
+            background: #1d4ed8;
+        }
+
+@media (max-width: 768px) {
+    .registration-card {
+        padding: 24px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .button-section {
+        text-align: center;
+    }
+
+        .button-section button {
+            width: 100%;
+        }
+}
