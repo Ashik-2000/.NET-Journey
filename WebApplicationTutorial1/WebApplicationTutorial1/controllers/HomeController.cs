@@ -17,8 +17,14 @@ namespace WebApplicationTutorial1.controllers
             return Ok(request.ToString());
         }
 
-        [Route("home")]
+        [Route("View")]
         [Route("/")]
+        public IActionResult ViewPractice()
+        {
+            return View();
+        }
+
+        [Route("home")]
         public IActionResult HomePage()
         {
             return View();
