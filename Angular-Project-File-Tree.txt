@@ -1,0 +1,47 @@
+└── my-project/
+    └── src/
+        ├── style/
+        │   ├── base.scss
+        │   └── components.scss
+        ├── app/
+        │   ├── features/
+        │   │   └── customer/
+        │   │       ├── customer-add-edit/
+        │   │       ├── customer-list/
+        │   │       │   ├── customer-view-modal/
+        │   │       │   │   ├── customer-view-modal.ts
+        │   │       │   │   ├── customer-view-modal.html
+        │   │       │   │   └── customer-view-modal.scss
+        │   │       │   ├── customer-list.ts
+        │   │       │   ├── customer-list.html
+        │   │       │   └── customer-list.scss
+        │   │       ├── customer-view/
+        │   │       ├── enums/
+        │   │       ├── models/
+        │   │       ├── services/
+        │   │       ├── customer.ts
+        │   │       ├── customer.html
+        │   │       ├── customer.scss
+        │   │       └── customer.route.ts
+        │   ├── core/
+        │   │   ├── interceptors/
+        │   │   ├── auth/
+        │   │   └── layout/
+        │   ├── shared/
+        │   │   ├── components/
+        │   │   ├── pipes/
+        │   │   ├── directives/
+        │   │   ├── class/
+        │   │   ├── services/
+        │   │   ├── models/
+        │   │   ├── enums/
+        │   │   └── functions/
+        │   ├── pages.ts
+        │   ├── pages.html
+        │   └── pages.scss
+        ├── environment/
+        │   ├── environment.development.ts
+        │   └── environment.test.ts
+        ├── index.html
+        ├── main.ts
+        └── style.scss

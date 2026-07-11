@@ -1,0 +1,22 @@
+.sidebar {
+  min-height: 100vh;
+}
+
+.sidebar .nav-link {
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.sidebar .nav-link:hover {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
+
+.sidebar .nav-link.active {
+  background: var(--primary);
+  color: #fff;
+}
