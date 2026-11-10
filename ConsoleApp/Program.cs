@@ -10,11 +10,11 @@ internal class Program
         //BubbleSort(x);
         //SelectionSort(x);
         //InsertionSort(x);
-        //MergeSort(x, 0, x.Length - 1);
-        int[] result = MergeSort(x);
+        MergeSort(x, 0, x.Length - 1);
+        //int[] result = MergeSort(x);
 
-        //Console.WriteLine(String.Join(", ", x));
-        Console.WriteLine(String.Join(", ", result));
+        Console.WriteLine(String.Join(", ", x));
+        //Console.WriteLine(String.Join(", ", result));
     }
 
     static void BubbleSort(int[] arr)
@@ -97,9 +97,14 @@ internal class Program
             return;
 
         int mid = (st + end)/2;
+
+        /* Call recursion only when the sub-array length is greater than 2.
+        This avoids most of the single element recusion calls and thus, reduces the call stack */
+        if ((end - st) + 1 > 2) {
         // Divide
-        MergeSort(arr, st, mid);
-        MergeSort(arr, mid+1, end);
+            MergeSort(arr, st, mid);
+            MergeSort(arr, mid + 1, end);
+        }
         // Merge
         Merge(arr, st, mid, end);
     }
