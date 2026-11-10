@@ -7,23 +7,19 @@ namespace FirstProject
     {
         static void Main()
         {
-            List<int> arr = new List<int>{2, 7, 11, 15 };
-            List<int> result = TwoSum(arr, 17);
-
-            Console.WriteLine($"[{string.Join(",", result)}]");
+            int[] arr = { 1, 1, 2 };
         }
-        public static List<int> TwoSum(List<int> nums, int target)
+        static int RemoveElement(int[] nums, int val)
         {
-            for (int i = 0; i < nums.Count; i++) {
-                for (int j = i+1; j < nums.Count; j++)
-                {
-                    if (nums[i] + nums[j] == target)
-                    {
-                        return new List<int> { i, j };
-                    }
-                }
+            if (nums.Length <= 0) return 0;
+
+            int k = nums.Length - 1;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+
             }
-            return new List<int>();
+            return 0;
         }
     }
 }

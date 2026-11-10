@@ -1,0 +1,30 @@
+<nav class="sidebar bg-white border-end d-flex flex-column p-3">
+  <!-- Brand -->
+  <div class="pb-3 mb-3 border-bottom">
+    <h4 class="fw-bold mb-0">Practice Modules</h4>
+    <small class="text-muted">Code, Build, Fun</small>
+  </div>
+
+  <!-- Navigation -->
+  <ul class="nav nav-pills flex-column gap-2">
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        routerLink="/pages"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Welcome
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/pages/gym-crud" routerLinkActive="active"> Gym </a>
+    </li>
+  </ul>
+
+  <!-- Footer -->
+  <div class="mt-auto pt-3 border-top">
+    <small class="text-muted"> © 2026 Admin </small>
+  </div>
+</nav>
