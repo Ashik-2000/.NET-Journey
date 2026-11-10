@@ -1,0 +1,42 @@
+/* ==========================================
+   Form Layout
+========================================== */
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================
+   Labels
+========================================== */
+
+.form-label {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.2;
+  user-select: none;
+}
+
+/* ==========================================
+   Inputs
+========================================== */
+
+@media (max-width: 768px) {
+  .form-control,
+  .ng-form-select {
+    font-size: 16px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
